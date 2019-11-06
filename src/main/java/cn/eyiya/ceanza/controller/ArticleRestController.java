@@ -2,9 +2,12 @@ package cn.eyiya.ceanza.controller;
 
 import cn.eyiya.ceanza.model.AjaxResponse;
 import cn.eyiya.ceanza.model.Article;
+import cn.eyiya.ceanza.service.ArticleRestService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+
+import javax.annotation.Resource;
 
 
 @Slf4j
@@ -12,6 +15,8 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/rest")
 public class ArticleRestController {
 
+    @Resource
+    ArticleRestService articleRestService;
  
     //@RequestMapping(value = "/article", method = POST, produces = "application/json")
     @PostMapping("/article")
@@ -21,7 +26,8 @@ public class ArticleRestController {
                                                    @RequestParam String  author) {*/
 
         log.info("saveArticle：{}",article);
-
+        articleRestService.saveArticle(article);
+        log.info("我要看打桩效果："+articleRestService.saveArticle(article));
         return  AjaxResponse.success(article);
     }
  
