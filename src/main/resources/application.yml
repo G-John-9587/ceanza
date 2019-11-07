@@ -6,27 +6,3 @@ spring:
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
-
-
-# 自定义配置
-# 随机数占位符：${random.value}、${random.int}、${random.long}、${random.int(10)}、${random.int[1024,65536]}
-# 默认值：${xxxxx.yyyy:默认值}
-family:
-  family-name: gaohome
-  father:
-    name: lao gao
-    age: 28
-  mother:
-    name: lao lin
-    age: 26
-    alias:
-      - linmu
-      - lintou
-  child:
-    name: xiao gao
-    age: 1
-    friends:
-      - name: xiao a
-        sex: male
-      - name: xiao b
-        sex: female
