@@ -1,8 +1,5 @@
-server:
-  port: 8900
-
-# 全局日期格式化
 spring:
-  jackson:
-    date-format: yyyy-MM-dd HH:mm:ss
-    time-zone: GMT+8
+  profiles:
+    active: dev
+
+
