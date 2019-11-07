@@ -1,10 +1,14 @@
 package cn.eyiya.ceanza.model;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 @Data
+@ApiModel //响应类描述
 public class AjaxResponse {
 
+    @ApiModelProperty("是否请求成功")
     private boolean isok;
     private int code;   
     private String message;
