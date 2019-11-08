@@ -15,7 +15,7 @@ import java.util.List;
 @NoArgsConstructor
 @Builder
 @JsonPropertyOrder(value={"content", "title"}) //改变json子属性的默认定义的顺序
-public class Article {
+public class ArticleVO {
 
 
     @JsonIgnore //排除属性不做序列化与反序列化

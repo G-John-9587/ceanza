@@ -1,6 +1,6 @@
 package cn.eyiya.ceanza;
 
-import cn.eyiya.ceanza.model.Article;
+import cn.eyiya.ceanza.model.ArticleVO;
 import cn.eyiya.ceanza.service.ArticleRestService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.extern.slf4j.Slf4j;
@@ -35,7 +35,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.
 @Slf4j
 //@SpringBootTest //提供测试需要的上下文ApplicationContext，并没有创建servlet容器
 @WebMvcTest //只测试controller层
-public class ArticleRestControllerTest3 {
+public class ArticleVORestControllerTest3 {
 
     @MockBean //作用见下面打桩的注解
     private ArticleRestService articleRestService;
@@ -62,11 +62,11 @@ public class ArticleRestControllerTest3 {
 
 
         ObjectMapper obj = new ObjectMapper();
-        Article article1 = obj.readValue(article, Article.class);
+        ArticleVO articleVO1 = obj.readValue(article, ArticleVO.class);
 
 
         //打桩 如果articleRestService.saveArticle(article1)执行，就返回ok。模拟service执行，实际service并没有真正执行。
-        when(articleRestService.saveArticle(article1)).thenReturn("ok");
+        //when(articleRestService.saveArticle(articleVO1)).thenReturn("ok");
 
         MvcResult result = mockMvc.perform(
                 MockMvcRequestBuilders.request(HttpMethod.POST, "/rest/article")

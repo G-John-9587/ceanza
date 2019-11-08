@@ -1,15 +1,20 @@
 package cn.eyiya.ceanza.service;
 
-import cn.eyiya.ceanza.model.Article;
+import cn.eyiya.ceanza.model.ArticleVO;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
-@Slf4j
-@Service
-public class ArticleRestService {
+import java.util.List;
 
-    public String saveArticle(Article article){
-        log.info("success save" + article);
-        return "测试";
-    }
+public interface ArticleRestService {
+
+   ArticleVO saveArticle(ArticleVO article);
+
+   void deleteArticle(Long id);
+
+   void updateArticle(ArticleVO article);
+
+   ArticleVO getArticle(Long id);
+
+   List<ArticleVO> getAll();
 }
