@@ -1,6 +1,6 @@
 package cn.eyiya.ceanza;
 
-import cn.eyiya.ceanza.model.Article;
+import cn.eyiya.ceanza.pojo.Article;
 import cn.eyiya.ceanza.service.ArticleRestService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.extern.slf4j.Slf4j;

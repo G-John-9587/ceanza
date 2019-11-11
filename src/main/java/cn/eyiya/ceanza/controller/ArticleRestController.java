@@ -1,8 +1,9 @@
 package cn.eyiya.ceanza.controller;
 
 import cn.eyiya.ceanza.model.AjaxResponse;
-import cn.eyiya.ceanza.model.Article;
+import cn.eyiya.ceanza.pojo.Article;
 import cn.eyiya.ceanza.service.ArticleRestService;
+import cn.eyiya.ceanza.service.ArticleService;
 import io.swagger.annotations.*;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
@@ -18,6 +19,8 @@ public class ArticleRestController {
 
     @Resource
     ArticleRestService articleRestService;
+    @Resource
+    ArticleService articleService;
 
     //swagger使用示例
     //访问地址http://localhost:8900/swagger-ui.html
@@ -44,8 +47,11 @@ public class ArticleRestController {
                                                    @RequestParam String  author) {*/
 
         log.info("saveArticle：{}",article);
-        articleRestService.saveArticle(article);
-        log.info("我要看打桩效果："+articleRestService.saveArticle(article));
+        //articleRestService.saveArticle(article);
+        articleService.insert(article);
+        articleService.updateByPrimaryKey(article);
+        articleService.updateByPrimaryKey(article);
+        //log.info("我要看打桩效果："+articleRestService.saveArticle(article));
         return  AjaxResponse.success(article);
     }
  
@@ -54,25 +60,22 @@ public class ArticleRestController {
     public @ResponseBody AjaxResponse deleteArticle(@PathVariable Long id) {
 
         log.info("deleteArticle：{}",id);
-
+        articleService.deleteByPrimaryKey(id);
         return AjaxResponse.success(id);
     }
  
     //@RequestMapping(value = "/article/{id}", method = PUT, produces = "application/json")
     @PutMapping("/article/{id}")
     public @ResponseBody AjaxResponse updateArticle(@PathVariable Long id, @RequestBody Article article) {
-        article.setId(id);
-
+        articleService.updateByPrimaryKey(article);
         log.info("updateArticle：{}",article);
-
         return AjaxResponse.success(article);
     }
  
     //@RequestMapping(value = "/article/{id}", method = GET, produces = "application/json")
     @GetMapping( "/article/{id}")
     public @ResponseBody AjaxResponse getArticle(@PathVariable Long id) {
-
-        Article article1 = Article.builder().id(1L).author("zimug").content("spring boot 2.深入浅出").title("t1").build();
-        return AjaxResponse.success(article1);
+        Article article = articleService.selectByPrimaryKey(id);
+        return AjaxResponse.success(article);
     }
 }

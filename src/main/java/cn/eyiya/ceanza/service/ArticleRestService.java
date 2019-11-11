@@ -1,6 +1,6 @@
 package cn.eyiya.ceanza.service;
 
-import cn.eyiya.ceanza.model.Article;
+import cn.eyiya.ceanza.pojo.Article;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
