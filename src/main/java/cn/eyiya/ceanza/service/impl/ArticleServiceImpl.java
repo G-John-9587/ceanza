@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * @author G
@@ -43,7 +44,9 @@ public class ArticleServiceImpl implements ArticleService {
     }
 
     @Override
-    public int updateByPrimaryKey(Article record) {
-        return articleMapper.updateByPrimaryKey(record);
+    public int updateByPrimaryKey(Article record) { return articleMapper.updateByPrimaryKey(record); }
+
+    public List<Article> selectAll(){
+        return articleMapper.selectAll();
     }
 }

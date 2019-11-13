@@ -38,7 +38,11 @@ spring:
       max-pool-prepared-statement-per-connection-size: 20
       # 配置监控统计拦截的filters，去掉后监控界面sql无法统计，wall用于防火墙
       filters: stat,wall
-
+  freemarker:
+    cache: false #开发时用false
+    suffix: .html #默认后缀是ftl
+    charset: utf-8
+    template-loader-path: classpath:/templates/
 
 mybatis:
   mapper-locations: classpath:mapper/*.xml

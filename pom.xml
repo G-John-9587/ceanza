@@ -117,6 +117,12 @@
             <version>3.4.1</version>
         </dependency>
 
+        <!-- freemarker模板引擎 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-freemarker</artifactId>
+        </dependency>
+
         <!-- 热部署 -->
         <!--<dependency>
             <groupId>org.springframework.boot</groupId>
