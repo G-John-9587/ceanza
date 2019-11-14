@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class TestController {
 
-    @RequestMapping("/test")
+    @RequestMapping("/test") //RequestMapping注解写在方法上面，导致监听器和过滤器执行了两遍
     public String Test(){
         //@AllArgsConstructor //所有参数的构造函数
         Test test = new Test(1L, "ttttt1");
