@@ -49,3 +49,7 @@ mybatis:
   type-aliases-package: cn.eyiya.ceanza.pojo
   configuration:
     map-underscore-to-camel-case: true
+
+context:
+  listener:
+    classes: cn.eyiya.ceanza.listener.MyListener3
