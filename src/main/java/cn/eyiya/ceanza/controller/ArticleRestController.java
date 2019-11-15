@@ -75,6 +75,7 @@ public class ArticleRestController {
     //@RequestMapping(value = "/article/{id}", method = GET, produces = "application/json")
     @GetMapping( "/article/{id}")
     public @ResponseBody AjaxResponse getArticle(@PathVariable Long id) {
+        log.info("正在执行controller层");
         Article article = articleService.selectByPrimaryKey(id);
         return AjaxResponse.success(article);
     }
