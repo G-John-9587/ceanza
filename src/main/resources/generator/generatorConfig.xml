@@ -14,7 +14,7 @@
 
         <!-- 数据库链接URL，用户名、密码 -->
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://106.13.7.243:3306/eyiya"
+                        connectionURL="jdbc:mysql://180.76.234.77:3306/eyiya"
                         userId="root"
                         password="xiFENG@1987**">
         </jdbcConnection>
