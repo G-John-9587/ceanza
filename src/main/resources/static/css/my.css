@@ -1,0 +1,59 @@
+.day_gg {
+    position: relative;
+    float: left;
+    left: 46%;
+}
+
+.fl_gg {
+    position: relative;
+    float: left;
+    left: -46%;
+}
+
+/*
+------------------------------- */
+
+.time_gg {
+    float: left;
+    width: 100%;
+}
+
+.menu_wrapper_gg {
+    padding-top: 25px;
+    margin: 0;
+    font-size: 100%;
+    font: inherit;
+    font-family: 'Arial', sans-serif;
+    vertical-align: baseline;
+    overflow: hidden;
+}
+
+.d1_gg {
+    float: left;
+    padding-top: 25px;
+    width: 30%;
+    display: table-cell;
+    text-align: -webkit-center;
+    vertical-align: middle;
+}
+
+.menu_time_gg {
+    font-size: 2.8em;
+    text-align: center;
+    display: block;
+    padding-left: 10px;
+}
+
+.menu_timeunit_gg {
+    font-size: 17px;
+    text-align: center;
+    padding-top: 10px;
+    display: block;
+}
+
+.count_picture_gg {
+    width: 45px;
+    text-align: center;
+    padding-top: 10px;
+    display: block;
+}

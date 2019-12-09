@@ -1,439 +1,337 @@
+﻿<!DOCTYPE html>
+<html lang="zxx">
 
-<!DOCTYPE HTML>
-<html>
 <head>
 <title>Home</title>
-<!--css-->
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<!--css-->
-<!-- for-mobile-apps -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
-		function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!-- //for-mobile-apps -->
-<!-- js -->
-<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/numscroller-1.0.js"></script>
-<script src="js/responsiveslides.min.js"></script>
-<script>
-    $(function () {
-      $("#slider").responsiveSlides({
-      	auto: true,
-      	nav: true,
-      	speed: 500,
-        namespace: "callbacks",
-        pager: true,
-      });
-    });
-	
-  </script>
-<!--web-font-->
-<link href='http://fonts.googleapis.com/css?family=Carter+One' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
-<!--web-font-->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+<!-- CSS -->
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/bootstrap-responsive.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/my.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/font-awesome.css" type="text/css" media="screen">
+<!--[if lt IE 8]>
+	<div><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/images/upgrade.jpg"border="0"></a></div>  
+<![endif]-->
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>      
+	<link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
+<![endif]-->
 </head>
-<body>
-<!--header-->
-		<div class="header">
-			<div class="container">
-				<div class="heder-top">
-					<div class="logo">
-						<h1><a href="index.html">Voluntary</a></h1>
-					</div>
-					<div class="header-right">
-						<div class="shy-menu">
-							<a class="shy-menu-hamburger">
-								<span class="layer top"></span>
-								<span class="layer mid"></span>
-								<span class="layer btm"></span>
-							</a>
-							<div class="shy-menu-panel">
-								<nav class="menu menu--horatio">
-									<ul class="menu__list">
-										<li class="menu__item menu__item--current"><a href="index.html" class="menu__link">Home</a></li>
-										<li class="menu__item"><a href="about.html" class="menu__link">About</a></li> 
-										<li class="menu__item"><a href="causes.html" class="menu__link">Causes </a></li>
-										<li class="menu__item"><a href="gallery.html" class="menu__link">Gallery</a></li> 
-										<li class="menu__item"><a href="program.html" class="menu__link">Program  </a></li>
-										<li class="menu__item"><a href="codes.html" class="menu__link">Codes</a></li> 
-										<li class="menu__item"><a href="contact.html" class="menu__link">Contact</a></li>
-									</ul>
-								</nav>
-							</div>
-							<div class="clearfix"> </div>
-						</div>
-						<div class="menu open">
-						  <a class="hamburger">
-							<span class="layer top"></span>
-							<span class="layer mid"></span>
-							<span class="layer btm"></span>
-						  </a>
-						</div>
-						<script>
-							$(function() {
-								
-								initDropDowns($("div.shy-menu"));
 
-							});
-
-							function initDropDowns(allMenus) {
-
-								allMenus.children(".shy-menu-hamburger").on("click", function() {
-									
-									var thisTrigger = jQuery(this),
-										thisMenu = thisTrigger.parent(),
-										thisPanel = thisTrigger.next();
-
-									if (thisMenu.hasClass("is-open")) {
-
-										thisMenu.removeClass("is-open");
-
-									} else {			
-										
-										allMenus.removeClass("is-open");	
-										thisMenu.addClass("is-open");
-										thisPanel.on("click", function(e) {
-											e.stopPropagation();
-										});
-									}
-									
-									return false;
-								});
-							}
-						</script>
-					</div>
-					<div class="clearfix"> </div>
+<body class="main">
+	<!-- START MOUNTAIN EFFECT -->
+	<div class="mountainbg">
+		<div class="mountaincover">
+			<div class="mountain">
+				<div class="mountain-top">
+					<div class="mountain-cap-1"></div>
+					<div class="mountain-cap-2"></div>
+					<div class="mountain-cap-3"></div>
 				</div>
-				<div class="banner-text">
-					<h3>Duis Aute Irure Dolor In Reprehenderit In Voluptate</h3>
-					<a href="donate.html" class="but hvr-rectangle-out">Donate Now</a>
+			</div>
+			<div class="mountain-two">
+				<div class="mountain-top">
+					<div class="mountain-cap-1"></div>
+					<div class="mountain-cap-2"></div>
+					<div class="mountain-cap-3"></div>
+				</div>
+			</div>
+			<div class="mountain-three">
+				<div class="mountain-top">
+					<div class="mountain-cap-1"></div>
+					<div class="mountain-cap-2"></div>
+					<div class="mountain-cap-3"></div>
+				</div>
+			</div>
+			<div class="cloud"></div>
+			<div class="hot-air-balloon"><img src="images/reqiqiu.png" alt=""></div>
+		</div>
+	</div>
+	<!-- END MOUNTAIN EFFECT -->
+	<div id="inner" style="padding-top: 28px">
+		<div id="content">
+			<div class="container">
+				<div class="row">
+					<div class="span3">
+						<div class="box1">
+							<!--<header>
+								<div class="logo_wrapper">
+									<a href="index.html" ><img src="images/logo2.png" style="height: 80px"></a>
+								</div>
+							</header>-->
+							<div>
+								<img src="images/wecome/ds.png">
+							</div>
+						</div>
+					</div>
+					<div class="span8 offset1">
+						<!-- START CAROUFREDSEL SLIDER -->
+						<div class="box2">
+							<div class="menu_wrapper_gg">
+								<div class="day_gg">
+									<span class="menu_time_gg fl_gg" id="day"></span>
+									<!--<span class="fl_gg" style="line-height: 49px">天</span>-->
+									<img src="images/wecome/day.png" class="fl_gg" style="line-height: 49px; width: 45px;">
+								</div>
+								<div class="time_gg">
+									<div class="d1_gg">
+										<span class="menu_time_gg" id="hour"></span>
+										<img src="images/wecome/hour.png" class="count_picture_gg">
+									</div>
+									<div class="d1_gg">
+										<span class="menu_time_gg" id="minute"></span>
+										<img src="images/wecome/minute.png" class="count_picture_gg">
+									</div>
+									<div class="d1_gg">
+										<span class="menu_time_gg" id="second"></span>
+										<img src="images/wecome/second.png" class="count_picture_gg">
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- END CAROUFREDSEL SLIDER -->
+					</div>
 				</div>
 			</div>
 		</div>
-		<!--header-->
-		<div class="content">
-			<div class="banner-bottom">
-				<div class="container">
-					<div class="banner-grids">
-					<div class="col-md-8 banner-grid1">
-							<h2 class="tittle1">Welcome TO The <span>Organization You Can Trust</span></h2>
-							<h5>Lorem ipsum dolor sit amet, lorem Consec tetuer adipicing it. Praesebul lorem ipsum.S natoque penatibus et gnis dent monteiculu..</h5>
-							<p>Lorem ipsum dolor sit amet, lorem Consec tetuer adipicing it. Praesebul lorem ipsum.S natoque penatibus et gnis dent monteiculu. Praesent vesti Cum sociis natoque penatibus et magnis dis parturient montes ascetur ridiculus .</p>
-							<a href="about.html" class="button hvr-rectangle-out">Read more</a>
+		<!-- START BANNERS -->
+		<!--<div id="banners">
+			<div class="container">
+				<div class="row">
+					<div class="span4">
+						&lt;!&ndash; START NEWS &ndash;&gt;
+						<div class="news">
+							<div class="news_title">News</div>
+							<div class="date1 clearfix">
+								<div class="txt1 c4">12
+									<br><span>jan</span></div>
+								<div class="txt2">
+									<h5><a href="#">Curabitur conva</a></h5>
+									<p>Maecenas ac est hendrerit magi aliquam erat.</p>
+								</div>
+							</div>
+							<div class="date1 clearfix">
+								<div class="txt1 c2">16
+									<br><span>feb</span></div>
+								<div class="txt2">
+									<h5><a href="#">Convallis inter</a></h5>
+									<p>Maecenas ac est hendrerit magi aliquam erat.</p>
+								</div>
+							</div>
+							<div class="date1 clearfix">
+								<div class="txt1 c3">18
+									<br><span>mar</span></div>
+								<div class="txt2">
+									<h5><a href="#">Interdum hednd</a></h5>
+									<p>Maecenas ac est hendrerit magi aliquam erat.</p>
+								</div>
+							</div>
 						</div>
-						<div class="col-md-4 banner-grid">
-							<img src="images/p2.jpg" alt=" " class="img-responsive" />
+						&lt;!&ndash; END NEWS &ndash;&gt;
+					</div>
+					<div class="span4">
+						&lt;!&ndash; START ANNOUNCEMENTS &ndash;&gt;
+						<div class="announcements">
+							<div class="announcements_title">Announcements</div>
+							<div class="thumb1">
+								<div class="thumbnail clearfix">
+									<figure><img src="images/teacher/d.jpg" alt="Aliquam erat volutpat" class="news_img"></figure>
+									<div class="caption">
+										<h5><a href="#">Aliquam erat</a></h5>
+										<p> Veniam, quis nostrud exercitation ullamco labor. </p>
+									</div>
+								</div>
+							</div>
+							<div class="thumb1">
+								<div class="thumbnail clearfix">
+									<figure><img src="images/teacher/c.jpg" alt="Aliquam erat volutpat" class="news_img"></figure>
+									<div class="caption">
+										<h5><a href="#">Aliquam volua</a></h5>
+										<p> Veniam, quis nostrud exercitation ullamco labor. </p>
+									</div>
+								</div>
+							</div>
+							<div class="thumb1">
+								<div class="thumbnail clearfix">
+									<figure><img src="images/teacher/a.jpg" alt="Aliquam erat volutpat" class="news_img"></figure>
+									<div class="caption">
+										<h5><a href="#">Veniam nisi</a></h5>
+										<p> Veniam, quis nostrud exercitation ullamco labor. </p>
+									</div>
+								</div>
+							</div>
+						</div>
+						&lt;!&ndash; END ANNOUNCEMENTS &ndash;&gt;
+					</div>
+					<div class="span4">
+						&lt;!&ndash; START SCHOOL CLASSES &ndash;&gt;
+						<div class="school-classes">
+							<div class="school-classes_title">School Classes</div>
+							<div class="date2 clearfix">
+								<div class="txt1 c4">1</div>
+								<div class="txt2">
+									<p>Maecenas ac est hendreritim magi aliquam erat.</p>
+								</div>
+							</div>
+							<div class="date2 clearfix">
+								<div class="txt1 c2">2
+									<br> </div>
+								<div class="txt2">
+									<p>Maecenas ac est hendreritim magi aliquam erat.</p>
+								</div>
+							</div>
+							<div class="date2 clearfix">
+								<div class="txt1 c3">3</div>
+								<div class="txt2">
+									<p>Maecenas ac est hendreritim magi aliquam erat.</p>
+								</div>
+							</div>
+							<div class="date2 clearfix">
+								<div class="txt1 c3">4</div>
+								<div class="txt2">
+									<p>Maecenas ac est hendreritim magi aliquam erat.</p>
+								</div>
+							</div>
+							<div class="date2 clearfix">
+								<div class="txt1 c3">5</div>
+								<div class="txt2">
+									<p>Maecenas ac est hendreritim magi aliquam erat.</p>
+								</div>
+							</div>
+						</div>
+						&lt;!&ndash; END SCHOOL CLASSES &ndash;&gt;
+					</div>
+				</div>
+			</div>
+		</div>-->
+		<!-- END BANNERS -->
+		<!-- START WELCOME -->
+		<!--<div class="welcome_wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="span12">
+						<div class="welcome">
+							<div class="row">
+								<div class="span6"> <img src="images/bicycle.png" class="img-responsive" alt=""> </div>
+								<div class="span6">
+									<div class="welcome_title">Welcome</div>
+									<h5>Starting with the new school year in our kindergarten</h5>
+									<p>Nunc suscipit. Suspendisse enim arcu, convallis non, cursus sed, dignissim et, est. Aenean semper aliquet libero. Ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean semper aliquet libero. Ipsum dolor sit amet conse ctetur adipisicing elit aliqua duruderya.</p>
+									<p>Nunc suscipit. Suspendisse enim arcu, convallis non, cursus sed, dignissim aest. Aenean semper aliquet libero.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>-->
+		<!-- END WELCOME -->
+		<!-- START FOOTER -->
+		<!--<footer>
+			<div class="social_wrapper">
+				<ul class="social clearfix">
+					<li><a href="index.html#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="index.html#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="index.html#"><i class="fa fa-instagram"></i></a></li>
+					<li><a href="index.html#"><i class="fa fa-youtube"></i></a></li>
+					<li><a href="index.html#"><i class="fa fa-pinterest"></i></a></li>
+				</ul>
+			</div>
+			<div class="copyright">Copyright &copy; 2019.yiya All rights reserved.<a target="_blank" href="http://www.yiya.site</a></div>
+		</footer>-->
+		<!-- END FOOTER -->
+	</div>
 
-						</div>
-						<div class="clearfix"></div>
-					</div>
-				</div>
-			</div>
-			<div class="help-section">
-				<div class="container">	
-				<h3 class="tittle">Our Charities</h3>
-					<div class="help-grids">
-						<div class="col-md-4 help-grid">
-							<div class="icon">
-							<i class="glyphicon glyphicon-bell" aria-hidden="true"></i>
-							</div>
-							<h4>Adoption Child</h4>
-							<p>At the same time, we advocate for laws and policies in the United States that will improve the lives of millions of people around the world.</p>
-						</div>
-						<div class="col-md-4 help-grid">
-							<div class="icon">
-							<i class="glyphicon glyphicon-yen" aria-hidden="true"></i>
-							</div>
-							<h4>Charity Actions</h4>
-							<p>At the same time, we advocate for laws and policies in the United States that will improve the lives of millions of people around the world.</p>
-						</div>
-						<div class="col-md-4 help-grid">
-							<div class="icon">
-							<i class="glyphicon glyphicon-heart" aria-hidden="true"></i>
-							</div>
-							<h4>Child Protection</h4>
-							<p>At the same time, we advocate for laws and policies in the United States that will improve the lives of millions of people around the world.</p>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-				</div>	
-			</div>	
-			<!---Organization--->		
-			<div class="organization">
-				<div class="container">
-					<div class="organization-grids">
-						<div class="col-md-8 organization-grid">
-							<figure>
-						<img src="images/p.jpg" alt=" " class="img-responsive" />
-						<figcaption>
-							<h4>Voluntary</h4>
-							<p>Nullam velit metus tristique id purus eget consequat congue loreml orem ipsum dolor sit amet consectetur adipiscing elit. Praesent vesti Cum sociis natoque penatibus et magnis dis parturient montes ascetur ridiculus .</p>
-						</figcaption>
-					</figure>
+<!-- JS -->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<!--<script type="text/javascript" src="js/superfish.js"></script>-->
+<script type="text/javascript" src="js/jquery.ui.totop.js"></script>
+<script type="text/javascript" src="js/jquery.caroufredsel.js"></script>
+<script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script>
+	// CAROUFSEDSEL SLIDER 
+	/*$(document).ready(function () {
+		$('#caroufredsel_slider1').carouFredSel({
+			auto: {
+				timeoutDuration: 9000
+			}
+			, responsive: true
+			, direction: "left"
+			, width: '100%'
+			, scroll: {
+				items: 1
+				, duration: 1000
+				, easing: "easeOutExpo"
+				, fx: "fade"
+			}
+			, items: {
+				width: '1000'
+				, height: 'variable'
+				, visible: {
+					min: 1
+					, max: 1
+				}
+			}
+			, mousewheel: false
+			, swipe: {
+				onMouse: true
+				, onTouch: true
+			}
+			, pagination: ".pagination1"
+		});
+		$(window).bind("resize", updateSizes_vat).bind("load", updateSizes_vat);
 
-						</div>
-						<div class="col-md-4 organization-grid1">
-							<h3 class="tittle">Who We Are ?<span>Organization You Can Trust</span></h3>
-							<p>Nullam velit metus tristique id purus eget consequat congue loreml orem ipsum dolor sit amet consectetur adipiscing elit. Praesent vesti Cum sociis natoque penatibus et magnis dis parturient montes ascetur ridiculus .</p>
-							<p>Nullam velit metus tristique id purus eget consequat congue loreml orem ipsum dolor sit amet consectetur adipiscing elit .</p>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-				</div>
-			</div>
-			<!---Organization--->	
-				<!---causes--->
-			<div class="causes">
-				<div class="container">
-					<h3 class="tittle">Our Causes</h3>
-					<div class="causes-grids">
-						<div class="col-md-3 causes-grid">
-							<img src="images/p1.jpg" class="img-responsive" alt=""/>
-								<div class="cause-text">
-									<h4>Help to get Education</h4>
-									<div class="progress-bar orange shine"> <span style="width: 100%"></span> </div>
+		function updateSizes_vat() {
+			$('#caroufredsel_slider1').trigger("updateSizes");
+		}
+		updateSizes_vat();
+	});*/
+	$(window).load(function () {});
 
-									<p class="progress-bar-text">Donated: 93.88% / <span>$97,000.00</span></p>
-									<a href="donate.html" class="button1 hvr-rectangle-out">Donate Now</a>
-								</div>
-						</div>
-						<div class="col-md-3 causes-grid">
-							<img src="images/p2.jpg" class="img-responsive" alt=""/>
-								<div class="cause-text">
-									<h4>Help to get Education</h4>
-									<div class="progress-bar orange shine"> <span style="width: 100%"></span> </div>
-										<script>	$(document).ready(function(){ 
-												$('.quarter').click(function(){
-													$(this).parent().prev().children('span').css('width','50%');
-													});
-												$('.half').click(function(){
-													$(this).parent().prev().children('span').css('width','55%');
-													});
-												$('.three-quarters').click(function(){
-													$(this).parent().prev().children('span').css('width','75%');
-													});
-												$('.full').click(function(){
-													$(this).parent().prev().children('span').css('width','100%');
-													});			
-											});
-												var intervalID = setInterval(function(){getData();}, 100);
-												var volumeLevel = 40;
-												function getData(){
-												  if (volumeLevel==40)
-													{
-													  volumeLevel=60
-													}else if (volumeLevel==60)
-													{
-													  volumeLevel=40
-													}
-													$("#soundlevel").children('span').css('width', Math.floor(Math.random() * 100)+'%');
-												}
-												//@ sourceURL=pen.js
-										</script>
-									<p class="progress-bar-text">Donated: 93.88% / <span>$97,000.00</span></p>
-									<a href="donate.html" class="button1 hvr-rectangle-out">Donate Now</a>
-								</div>
-						</div>
-						<div class="col-md-3 causes-grid">
-							<img src="images/p3.jpg" class="img-responsive" alt=""/>
-								<div class="cause-text">
-									<h4>Help to get Education</h4>
-									<div class="progress-bar orange shine"> <span style="width: 100%"></span> </div>
-
-									<p class="progress-bar-text">Donated: 93.88% / <span>$97,000.00</span></p>
-									<a href="donate.html" class="button1 hvr-rectangle-out">Donate Now</a>
-								</div>
-						</div>
-						<div class="col-md-3 causes-grid">
-							<img src="images/p4.jpg" class="img-responsive" alt=""/>
-								<div class="cause-text">
-									<h4>Help to get Education</h4>
-									<div class="progress-bar orange shine"> <span style="width: 100%"></span> </div>
-
-									<p class="progress-bar-text">Donated: 93.88% / <span>$97,000.00</span></p>
-									<a href="donate.html" class="button1 hvr-rectangle-out">Donate Now</a>
-								</div>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-				</div>
-			</div>
-				<!---causes--->
-				<!---statistics--->
-			<div class="statistics">
-				<div class="container">
-					<h3 class="tittle">Charity Statistics</h3>
-					<div class="statistics-grids">
-						<div class="col-md-3 statistics-grid">
-							<div class="statistics-text">
-								<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='105206' data-delay='.5' data-increment="100">105206</div>
-								<h5>Customers</h5>
-							</div>
-						</div>
-						<div class="col-md-3 statistics-grid">
-							<div class="statistics-text">
-								<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='372' data-delay='.5' data-increment="100">372</div>
-								<h5>Downloads</h5>
-							</div>
-						</div>
-						<div class="col-md-3 statistics-grid">
-							<div class="statistics-text">
-								<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='10520' data-delay='.5' data-increment="100">10520</div>
-								<h5>Themes</h5>
-							</div>
-						</div>
-						<div class="col-md-3 statistics-grid">
-							<div class="statistics-text">
-								<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='256' data-delay='.5' data-increment="100">256</div>
-								<h5>Offices</h5>
-							</div>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-				</div>
-			</div>
-				<!---statistics--->
-				<!---testimonials--->
-			<div class="testimonials">
-				<div class="container">
-					<h3 class="tittle">Testimonials</h3>
-					<div class="slider">
-						<div class="callbacks_container">
-							<ul class="rslides" id="slider">
-								<li>
-									<div class="success-img">
-										<img src="images/t1.jpg" class="img-responsive" alt=""/>	
-									</div>										
-										<p>Aenean nonummy hendrerit mau phasellu porta. Fusce suscipit varius mi sed. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio morbi. Ut viverra mauris justo, quis auctor nisi. Suspendisse sit amet diam diam, eget volutpat lacus...</p>
-										<h4><a href="#">- Jhone N. smith ( CEO - Charity Mission )</a></h4>
-								</li>
-								<li>
-									<div class="success-img">
-										<img src="images/t2.jpg" class="img-responsive" alt=""/>	
-									</div>	         
-										<p>Nonummy aenean hendrerit mau phasellu porta. Fusce suscipit varius mi sed. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio morbi. Ut viverra mauris justo, quis auctor nisi. Suspendisse sit amet diam diam, eget volutpat lacus...</p>
-										<h4><a href="#">Anderson ( CEO - Charity Mission )</a></h4>
-								</li>
-								<li>
-									<div class="success-img">
-										<img src="images/t3.jpg" class="img-responsive" alt=""/>	
-									</div>	
-										<p>Fusce suscipit varius mi sed. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio morbi. Ut viverra mauris justo, quis auctor nisi. Suspendisse sit amet diam diam, eget volutpat lacus. Vestibulum faucibus scelerisque nisl vitae...</p>
-										<h4><a href="#">Bradley Grosh ( CEO - Charity Mission )</a></h4>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="partner">
-				<div class="container">
-					<h3 class="tittle"> Our Partner</h3>
-					<div class="partner-grids">
-						<div class="col-md-3 partner-grid">
-							<div class="partners">
-								<div class="partner-left">
-									<i class="glyphicon glyphicon-qrcode" aria-hidden="true"></i>
-								</div>
-								<div class="partner-right">
-									<h4>company name</h4>
-									<p>company description</p>
-								</div>
-								<div class="clearfix"></div>
-							</div>
-						</div>
-						<div class="col-md-3 partner-grid">
-							<div class="partners">
-								<div class="partner-left">
-									<i class="glyphicon glyphicon-certificate" aria-hidden="true"></i>
-								</div>
-								<div class="partner-right">
-									<h4>company name</h4>
-									<p>company description</p>
-								</div>
-								<div class="clearfix"></div>
-							</div>
-						</div>
-						<div class="col-md-3 partner-grid">
-							<div class="partners">
-								<div class="partner-left">
-									<i class="glyphicon glyphicon-star" aria-hidden="true"></i>
-								</div>
-								<div class="partner-right">
-									<h4>company name</h4>
-									<p>company description</p>
-								</div>
-								<div class="clearfix"></div>
-							</div>
-						</div>
-						<div class="col-md-3 partner-grid">
-							<div class="partners">
-								<div class="partner-left">
-									<i class="glyphicon glyphicon-asterisk" aria-hidden="true"></i>
-								</div>
-								<div class="partner-right">
-									<h4>company name</h4>
-									<p>company description</p>
-								</div>
-								<div class="clearfix"></div>
-							</div>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-				</div>
-			</div>
-		</div>	
-		<!---footer--->
-			<div class="footer-section">
-				<div class="container">
-					<div class="footer-grids">
-					<div class="col-md-4 footer-grid">
-						<h4>Newsletter</h4>
-							<p>Lorem Ipsum available, but the majority have suffe red by injected humour, randomised words which don't look even.</p>
-							<form action="#" method="post">
-								<input type="text" name="Email" placeholder="enter email address" required>
-								<input type="submit" value="Go">
-							</form>
-						</div>
-						<div class="col-md-4 footer-grid">
-						<h4>Causes links</h4>
-						<ul>
-							<li><a href="donate.html">Donate</a></li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="causes.html">Causes</a></li>
-							<li><a href="gallery.html">Gallery</a></li>
-							<li><a href="contact.html">Contact us</a></li>
-						</ul>
-						</div>
-						<div class="col-md-4 footer-grid">
-							<h4>Voluntary</h4>
-							<p>Mauris eget quam orci. Quisque porta varius duiuis posuere nibh mollis quis auris commodo rhoncus porttitor.Lorem Ipsum available, but the majority have suffe red by injected humour, randomised words which don't look even.</p>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-				</div>
-			</div>
-		<!---footer--->
-		<!---copy--->
-			<div class="copy-section">
-				<div class="container">
-					<div class="social-icons">
-						<a href="#"><i class="icon1"></i></a>
-						<a href="#"><i class="icon2"></i></a>
-						<a href="#"><i class="icon3"></i></a>
-						<a href="#"><i class="icon4"></i></a>
-					</div>
-					<div class="copy">
-						<p>Copyright &copy; 2016.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-			</div>
-			<!---copy--->
-
+	function siteTime(){
+		window.setTimeout("siteTime()", 1000);
+		var seconds = 1000;
+		var minutes = seconds * 60;
+		var hours = minutes * 60;
+		var days = hours * 24;
+		var today = new Date();
+		var todayYear = today.getFullYear();
+		var todayMonth = today.getMonth()+1;
+		var todayDate = today.getDate();
+		var todayHour = today.getHours();
+		var todayMinute = today.getMinutes();
+		var todaySecond = today.getSeconds();
+		/* Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
+        year - 作为date对象的年份，为4位年份值
+        month - 0-11之间的整数，做为date对象的月份
+        day - 1-31之间的整数，做为date对象的天数
+        hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
+        minutes - 0-59之间的整数，做为date对象的分钟数
+        seconds - 0-59之间的整数，做为date对象的秒数
+        microseconds - 0-999之间的整数，做为date对象的毫秒数 */
+		var t1 = Date.UTC(2016,12,01,00,00,00); //北京时间2016-12-1 00:00:00
+		var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
+		var diff = t2-t1;
+		var diffDays = Math.floor(diff/days);
+		var diffHours = Math.floor((diff-+diffDays*days)/hours);
+		var diffMinutes = Math.floor((diff-diffDays*days-diffHours*hours)/minutes);
+		var diffSeconds = Math.floor((diff-+diffDays*days-diffHours*hours-diffMinutes*minutes)/seconds);
+		$('#day').text(diffDays);
+		$('#hour').text(diffHours);
+		$('#minute').text(diffMinutes);
+		$('#second').text(diffSeconds);
+		//document.getElementById("sitetime").innerHTML=" 已运行"+diffYears+" 年 "+diffDays+" 天 "+diffHours+" 小时 "+diffMinutes+" 分钟 "+diffSeconds+" 秒";
+	}
+	siteTime();
+</script>
 </body>
+
 </html>
