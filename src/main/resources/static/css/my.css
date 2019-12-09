@@ -57,3 +57,11 @@
     padding-top: 10px;
     display: block;
 }
+
+.footer {
+    padding: 40px 20px 20px 20px;
+    text-align: center;
+    background: #bc9d81;
+    font-size: 18px;
+    font-family: "Baloo Bhaijaan";
+}
