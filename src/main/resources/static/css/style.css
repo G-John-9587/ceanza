@@ -206,7 +206,7 @@ header {
 		5 - FOOTER
 ------------------------------*/
 
-footer {
+/*footer {
     padding: 40px 20px 20px 20px;
     text-align: center;
     background: #bc9d81;
@@ -279,7 +279,7 @@ footer {
     width: 30px;
     bottom: 0;
     left: 0;
-}
+}*/
 
 
 /*------------------------------
@@ -1913,7 +1913,7 @@ input[type="color"],
 		17 - BALLOON
 ------------------------------*/
 
-.mountaincover {
+/*.mountaincover {
     z-index: -100;
     top: 0;
     left: 0;
@@ -2025,9 +2025,9 @@ input[type="color"],
     content: '';
     left: 25px;
     top: -10px;
-}
+}*/
 
-.hot-air-balloon,
+/*.hot-air-balloon,
 .hot-air-balloon:before,
 .hot-air-balloon:after {
     position: absolute;
@@ -2045,7 +2045,8 @@ input[type="color"],
     -webkit-animation: hot-air-balloon 30s infinite linear;
     -moz-animation: hot-air-balloon 30s infinite linear;
     -o-animation: hot-air-balloon 30s infinite linear;
-    animation: hot-air-balloon 30s infinite linear;
+    !*animation: hot-air-balloon 30s infinite linear;*!
+    animation: hot-air-balloon 5s infinite linear;
 }
 
 @-webkit-keyframes hot-air-balloon {
@@ -2075,7 +2076,7 @@ input[type="color"],
     content: '';
     left: 25px;
     top: -10px;
-}
+}*/
 
 
 /*------------------------------

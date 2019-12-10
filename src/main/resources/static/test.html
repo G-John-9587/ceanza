@@ -3,10 +3,10 @@
 <head>
     <meta charset="utf-8">
     <title>超简单css3跳动效果-jq22.com</title>
-    <script type="text/javascript" src="js/jquery.js"></script>
+    <script src="https://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
     <style>
         body{
-            background:#ccc;
+            background: #f2dede;
             margin: 0;
             height: 100vh;
             display: flex;
@@ -14,11 +14,18 @@
             align-items: center;
         }
 
+        .b2{
+            height: 50px;
+            width: 50px;
+            background: url(/images/icons/tizhong.ico);
+        }
+
         .box{
             height: 50px;
             width: 50px;
             position: relative;
         }
+
         .box::before{
             content: '';
             height: 8px; width: 50px; background: #000; opacity: .2; border-radius: 50%;
@@ -27,6 +34,7 @@
             left: 0;
             animation: shadow .5s linear infinite;
         }
+
         .box::after{
             border-radius: 5px;
             background: #fff;
@@ -38,6 +46,16 @@
             width: 50px;
             height: 50px;
         }
+
+        .box:hover::before {
+            animation-play-state: paused;
+        }
+
+        .box:hover::after {
+            animation-play-state: paused;
+        }
+
+
         @keyframes shadow {
             0%, 100% {transform: scaleX(1);}
             50% {transform: scaleX(1.2);}
@@ -64,8 +82,9 @@
 </head>
 <body>
 <div class="box">
+    <div class="b2"></div>
 </div>
-
+<div class="b2"></div>
 <script>
 
 </script>
