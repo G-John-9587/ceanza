@@ -73,6 +73,7 @@
     overflow: hidden;
     display: inline-block;
     height: 100%;
+    padding-bottom: 5px;
 }
 
 
@@ -190,7 +191,7 @@
 .airboll_gg:after {
     content: '';
     left: 25px;
-    top: -10px;
+    top: 0px;
 }
 
 
@@ -219,18 +220,28 @@
 @-webkit-keyframes cloud_gg {
     0% {
         left: 0px;
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
     }
     100% {
-        left: 100%;
+        left: 80%;
+        opacity: 0;
     }
 }
 
 @keyframes cloud_gg {
     0% {
         left: 0px;
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
     }
     100% {
-        left: 100%;
+        left: 80%;
+        opacity: 0;
     }
 }
 
@@ -252,17 +263,17 @@
     width: 50px;
     float: left;
     position: relative;
-    z-index: 2001;
+    z-index: 1001;
     margin: 0 12px;
-}
-
-.box_gg:hover {
-    animation-play-state: paused;
 }
 
 .box_gg::before{
     content: '';
-    height: 8px; width: 50px; background: #000; opacity: .2; border-radius: 50%;
+    height: 8px;
+    width: 50px;
+    background: #000;
+    opacity: .2;
+    border-radius: 50%;
     position: absolute;
     top: 67px;
     left: 0;
@@ -270,7 +281,8 @@
 }
 .box_gg::after{
     border-radius: 5px;
-    background: #fff;
+    background: url(../images/icons/naiping.ico);
+    background-size: 100%;
     animation: rotate .5s linear infinite;
     content: '';
     position: absolute;
@@ -278,6 +290,7 @@
     top: 0;
     width: 50px;
     height: 50px;
+    z-index: 1002;
 }
 
 .box_gg:hover::before {
@@ -309,5 +322,209 @@
     }
     100% {
         transform: translateY(0) ;
+    }
+}
+
+/**----------------方块动画2------------------- */
+.box2_gg{
+    height: 50px;
+    width: 50px;
+    float: left;
+    position: relative;
+    z-index: 1001;
+    margin: 0 12px;
+}
+
+.box2_gg::before{
+    content: '';
+    height: 8px;
+    width: 50px;
+    background: #000;
+    opacity: .2;
+    border-radius: 50%;
+    position: absolute;
+    top: 67px;
+    left: 0;
+    animation: shadow2 .5s linear infinite;
+}
+.box2_gg::after{
+    border-radius: 5px;
+    background: url(../images/icons/zhusheqi.ico);
+    background-size: 100%;
+    animation: rotate2 .5s linear infinite;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    z-index: 1002;
+}
+
+.box2_gg:hover::before {
+    animation-play-state: paused;
+}
+
+.box2_gg:hover::after {
+    animation-play-state: paused;
+}
+
+@keyframes shadow2 {
+    0%, 100% {transform: scaleX(1);}
+    50% {transform: scaleX(1.2);}
+}
+
+@keyframes rotate2 {
+    0% {
+        transform: translateY(0) ;
+    }
+    25% {
+        transform: translateY(10px);
+    }
+    50% {
+        transform: translateY(20px) scale(1.1, 0.9);
+
+    }
+    75% {
+        ransform: translateY(10px) ;
+    }
+    100% {
+        transform: translateY(0) ;
+    }
+}
+
+/**----------------方块动画3------------------- */
+.box3_gg{
+    height: 50px;
+    width: 50px;
+    float: left;
+    position: relative;
+    z-index: 1001;
+    margin: 0 12px;
+}
+
+.box3_gg::before{
+    content: '';
+    height: 8px;
+    width: 50px;
+    background: #000;
+    opacity: .2;
+    border-radius: 50%;
+    position: absolute;
+    top: 67px;
+    left: 0;
+    animation: shadow3 .5s linear infinite;
+}
+.box3_gg::after{
+    border-radius: 5px;
+    background: url(../images/icons/tizhong.ico);
+    background-size: 100%;
+    animation: rotate3 .5s linear infinite;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    z-index: 1002;
+}
+
+.box3_gg:hover::before {
+    animation-play-state: paused;
+}
+
+.box3_gg:hover::after {
+    animation-play-state: paused;
+}
+
+@keyframes shadow3 {
+    0%, 100% {transform: scaleX(1);}
+    50% {transform: scaleX(1.2);}
+}
+
+@keyframes rotate3 {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(10px);
+    }
+    50% {
+        transform: translateY(20px) scale(1.1, 0.9);
+
+    }
+    75% {
+        ransform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/**----------------方块动画4------------------- */
+.box4_gg{
+    height: 50px;
+    width: 50px;
+    float: left;
+    position: relative;
+    z-index: 1001;
+    margin: 0 12px;
+}
+
+.box4_gg::before{
+    content: '';
+    height: 8px;
+    width: 50px;
+    background: #000;
+    opacity: .2;
+    border-radius: 50%;
+    position: absolute;
+    top: 67px;
+    left: 0;
+    animation: shadow4 .5s linear infinite;
+}
+.box4_gg::after{
+    border-radius: 5px;
+    background: url(../images/icons/jilu.ico);
+    background-size: 100%;
+    animation: rotate4 .5s linear infinite;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    z-index: 1002;
+}
+
+.box4_gg:hover::before {
+    animation-play-state: paused;
+}
+
+.box4_gg:hover::after {
+    animation-play-state: paused;
+}
+
+@keyframes shadow4 {
+    0%, 100% {transform: scaleX(1);}
+    50% {transform: scaleX(1.2);}
+}
+
+@keyframes rotate4 {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(10px);
+    }
+    50% {
+        transform: translateY(20px) scale(1.1, 0.9);
+
+    }
+    75% {
+        ransform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
     }
 }

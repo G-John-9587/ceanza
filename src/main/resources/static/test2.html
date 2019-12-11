@@ -9,40 +9,62 @@
             <meta name="author" content="http://www.softwhy.com/" />
             <title>????</title>
             <style type="text/css">
-                /*.antzone {
-                    width: 100px;
-                    height: 100px;
-                    margin: 40px;
-                    text-align: center;
-                    line-height: 94px;
-                    border: 1px solid blue;
-                    border-radius: 50%;
-                    animation: play-state 3s linear infinite;
-                    cursor: pointer;
-                }
-                .antzone:hover {
-                    animation-play-state: paused;
+                .airboll_gg,
+                .airboll_gg:before,
+                .airboll_gg:after {
+                    position: absolute;
+                    width: auto;
+                    height: auto;
                 }
 
-                @keyframes play-state {
+                .airboll_gg img {
+                    width: 180px;
+                }
+
+                .airboll_gg {
+                    z-index: -2;
+                    bottom: 37%;
+                    -webkit-animation: airboll_gg 30s infinite linear;
+                    -moz-animation: airboll_gg 30s infinite linear;
+                    -o-animation: airboll_gg 30s infinite linear;
+                    animation: airboll_gg 5s infinite linear;
+                }
+
+                @-webkit-keyframes airboll_gg {
                     0% {
-                        margin-left: 0;
+                        right: 0px;
                     }
                     100% {
-                        margin-left: 200px;
+                        right: 100%;
                     }
-                }*/
+                }
 
-                .b2{
-                    height: 500px;
-                    width: 500px;
-                    background-image: url(/images/icons/zoom.png);
+                @keyframes airboll_gg {
+                    0% {
+                        right: 0px;
+                    }
+                    100% {
+                        right: 100%;
+                    }
+                }
+
+                .airboll_gg:before {
+                    content: '';
+                    left: 50px;
+                }
+
+                .airboll_gg:after {
+                    content: '';
+                    left: 25px;
+                    top: 0px;
                 }
             </style>
         </head>
 <body>
 <!--<div class="antzone"></div>-->
-<div class="b2"></div>
+<div class="airboll_gg">
+    <img src="images/reqiqiu.png" alt="">
+</div>
 </body>
 </html></title>
 </head>
