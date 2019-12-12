@@ -107,7 +107,7 @@ img {
 
 #inner {
     position: relative;
-    padding-top: 90px;
+    padding-top: 15px;
 }
 
 span {
@@ -2111,7 +2111,7 @@ input[type="color"],
 
 .pages_wrapper {
     background: #ffeed4;
-    margin-top: 35px;
+    margin-top: 0px;
     padding-bottom: 90px;
 }
 
@@ -2644,7 +2644,7 @@ input[type="color"],
         margin: 0px 3px -20px;
     }
     .container {
-        width: 300px;
+        width: 85%;
     }
     .navbar_ .nav {
         padding-top: 10px 0;

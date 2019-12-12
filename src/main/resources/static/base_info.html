@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<title>宝宝信息</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/main.css" type="text/css" media="screen">
+</head>
+
+<body class="main">
+	<!-- START MOUNTAIN EFFECT -->
+	<div class="head-ot">
+		<div class="head-in">
+			<div class="bicycle"><img src="images/bicycle.png" alt=""></div>
+		</div>
+	</div>
+	<!-- END MOUNTAIN EFFECT -->
+	<div id="inner">
+		<div id="content">
+			<div class="container">
+				<div class="row">
+					<div class="span3">
+						<div class="box1">
+							<header>
+								<!-- START LOGO
+								<div class="logo_wrapper">
+									<a href="index.html" class="logo"><img src="images/logo.png" alt="Kinder Garten Logo"></a>
+								</div>
+								 END LOGO -->
+							</header>
+							<!-- START NAVIGATION MENU -->
+							<nav>
+								<div class="menu_wrapper">
+									<div class="navbar navbar_">
+										<div class="navbar-inner navbar-inner_">
+											<a class="btn btn-navbar btn-navbar_" data-toggle="collapse" data-target=".nav-collapse_"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
+											<div class="nav-collapse nav-collapse_ collapse">
+												<ul class="nav sf-menu clearfix">
+													<li><a href="index.html">Home<span class="over1"></span></a></li>
+													<li><a href="about.html">About Us<span class="over1"></span></a></li>
+													<li><a href="services.html">Services<span class="over1"></span></a></li>
+													<li class="active"><a href="contact.html">Contact Us<span class="over1"></span></a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</nav>
+							<!-- END NAVIGATION MENU -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="pages_wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="span8">
+					   <!-- START CONTACT US -->
+						<div class="pages">
+							<!-- START COMMENT -->
+							<h3>Leave A Comment</h3>
+							<div id="note"></div>
+							<div id="fields">
+								<form id="ajax-contact-form" class="form-horizontal">
+									<div class="block1 clearfix">
+										<div class="block3">
+											<div class="control-group">
+												<label class="control-label" for="inputName">Full Name</label>
+												<div class="controls">
+													<input type="text" id="inputName" name="name" value="Full Name" onBlur="if(this.value=='') this.value='Full Name'" onFocus="if(this.value =='Full Name' ) this.value=''"> </div>
+											</div>
+											<div class="control-group">
+												<label class="control-label" for="inputEmail">E-mail</label>
+												<div class="controls">
+													<input type="text" id="inputEmail" name="email" value="E-mail" onBlur="if(this.value=='') this.value='E-mail'" onFocus="if(this.value =='E-mail' ) this.value=''"> </div>
+											</div>
+											<div class="control-group">
+												<label class="control-label" for="inputPhone">Phone</label>
+												<div class="controls">
+													<input type="text" id="inputPhone" name="phone" value="Phone" onBlur="if(this.value=='') this.value='Phone'" onFocus="if(this.value =='Phone' ) this.value=''"> </div>
+											</div>
+										</div>
+										<div class="block4">
+											<div class="control-group">
+												<label class="control-label" for="inputMessage">Message</label>
+												<div class="controls">
+													<textarea id="inputMessage" name="content" onBlur="if(this.value=='') this.value='Message'" onFocus="if(this.value =='Message' ) this.value=''">Message</textarea>
+												</div>
+											</div>
+										</div>
+									</div>
+									<button type="submit" class="submit">Submit Comment</button>
+								</form>
+							</div>
+							<!-- END COMMENT -->
+						</div>
+						<!-- END CONTACT US -->
+					</div>
+
+				 </div>
+			</div>
+		</div>
+
+		<!-- FOOTER -->
+	</div>
+
+<!-- JS -->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/superfish.js"></script>
+<script type="text/javascript" src="js/jquery.ui.totop.js"></script>
+<script type="text/javascript" src="js/jquery.caroufredsel.js"></script>
+<script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script src="http://ditu.google.cn/maps/api/js?key=AIzaSyCe2q1gFSd75jKUnTDPq0nZWaMlEu6vL30"></script>
+<script src="js/map.js"></script>
+<script>
+	// CAROUFSEDSEL SLIDER 
+	$(document).ready(function () {
+		$('#caroufredsel_slider1').carouFredSel({
+			auto: {
+				timeoutDuration: 9000
+			}
+			, responsive: true
+			, direction: "left"
+			, width: '100%'
+			, scroll: {
+				items: 1
+				, duration: 1000
+				, easing: "easeOutExpo"
+				, fx: "fade"
+			}
+			, items: {
+				width: '1000'
+				, height: 'variable'
+				, visible: {
+					min: 1
+					, max: 1
+				}
+			}
+			, mousewheel: false
+			, swipe: {
+				onMouse: true
+				, onTouch: true
+			}
+			, pagination: ".pagination1"
+		});
+		$(window).bind("resize", updateSizes_vat).bind("load", updateSizes_vat);
+
+		function updateSizes_vat() {
+			$('#caroufredsel_slider1').trigger("updateSizes");
+		}
+		updateSizes_vat();
+	});
+	$(window).load(function () {});
+</script>
+</body>
+
+</html>

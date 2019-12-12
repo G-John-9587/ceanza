@@ -1,3 +1,30 @@
+/*
+--------------Head----------------- */
+.head-ot {
+    position: absolute;
+    right: 10px;
+    top: 75px;
+    width: 90%;
+    height: 50px;
+}
+
+.head-in {
+    z-index: -100;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 365px;
+}
+
+.bicycle {
+    z-index: -98;
+    width: 90%;
+    height: 90%;
+}
+
+/**------------Head----------------*/
+
 .day_gg {
     position: relative;
     float: left;

@@ -1,7 +1,6 @@
 package cn.eyiya.ceanza.dao;
 
 import cn.eyiya.ceanza.pojo.Article;
-import org.springframework.context.annotation.Bean;
 
 import java.util.List;
 
