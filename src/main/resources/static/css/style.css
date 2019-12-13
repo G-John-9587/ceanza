@@ -626,9 +626,9 @@ h2 {
 
 h3 {
     color: #aec5a5;
-    font-size: 32px;
+    font-size: 35px;
     line-height: 40px;
-    font-family: 'Baloo Bhaijaan', cursive;
+    font-family: 'hbbb';
     padding: 0px 0 20px 0;
     margin: 0;
 }
@@ -1568,7 +1568,69 @@ input[type="color"],
 }
 
 #ajax-contact-form .control-label {
-    display: none;
+    float: left;
+    color: #aec5a5;
+    font-size: 20px;
+    line-height: 40px;
+    font-family: 'hbbb';
+    padding: 0px 8px 20px 0;
+    margin: 0;
+}
+
+#ajax-contact-form .control-label-gg {
+    float: left;
+    color: #aec5a5;
+    font-size: 20px;
+    line-height: 0px;
+    font-family: 'hbbb';
+    padding: 0px 8px 20px 50px;
+    margin: 0;
+}
+
+#ajax-contact-form .control-label-radio {
+    width:25px;
+    height:25px;
+    appearance: none;
+    position: relative;
+}
+
+#ajax-contact-form .control-label-radio:before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    border: 2px solid #edd4bd;
+    display: inline-block;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+#ajax-contact-form .control-label-radio:checked:before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    border: 2px solid #edd4bd;
+    display: inline-block;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+#ajax-contact-form .control-label-radio:checked:after{
+    content: '';
+    width: 12px;
+    height: 12px;
+    text-align: center;
+    background:#aec5a5;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+}
+#ajax-contact-form .control-label-radio:checked+label{
+    color: #edd4bd;
+}
+
+#ajax-contact-form .subdiv{
+    width: 100%;
+    text-align: center;
 }
 
 #ajax-contact-form .controls {
@@ -1623,9 +1685,10 @@ input[type="color"],
     margin-top: 15px;
     display: inline-block;
     height: 48px;
+    width: 150px;
     text-decoration: none;
-    font-family: 'Baloo Bhaijaan', cursive;
-    font-size: 18px;
+    font-family: 'hbbb', cursive;
+    font-size: 24px;
     font-weight: 400;
     white-space: nowrap;
     letter-spacing: 0px;
@@ -2128,7 +2191,7 @@ input[type="color"],
 }
 
 .pages {
-    margin-top: 90px;
+    margin-top: 30px;
 }
 
 .location {
@@ -2659,7 +2722,7 @@ input[type="color"],
     }
     #ajax-contact-form input,
     #ajax-contact-form textarea {
-        width: 270px;
+        width: 80%;
     }
     .services_wrapper {
         padding-bottom: 20px;

@@ -11,6 +11,13 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'hbbb';
+  src: url('../fonts/hbbb.eot?v=4.7.0');
+  src: url('../fonts/hbbb.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/hbbb.woff2?v=4.7.0') format('woff2'), url('../fonts/hbbb.woff?v=4.7.0') format('woff'), url('../fonts/hbbb.ttf?v=4.7.0') format('truetype'), url('../fonts/hbbb.svg?v=4.7.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 .fa {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;

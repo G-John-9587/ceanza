@@ -15,49 +15,13 @@
 
 <body class="main">
 	<!-- START MOUNTAIN EFFECT -->
-	<div class="head-ot">
+	<!--<div class="head-ot">
 		<div class="head-in">
 			<div class="bicycle"><img src="images/bicycle.png" alt=""></div>
 		</div>
-	</div>
+	</div>-->
 	<!-- END MOUNTAIN EFFECT -->
 	<div id="inner">
-		<div id="content">
-			<div class="container">
-				<div class="row">
-					<div class="span3">
-						<div class="box1">
-							<header>
-								<!-- START LOGO
-								<div class="logo_wrapper">
-									<a href="index.html" class="logo"><img src="images/logo.png" alt="Kinder Garten Logo"></a>
-								</div>
-								 END LOGO -->
-							</header>
-							<!-- START NAVIGATION MENU -->
-							<nav>
-								<div class="menu_wrapper">
-									<div class="navbar navbar_">
-										<div class="navbar-inner navbar-inner_">
-											<a class="btn btn-navbar btn-navbar_" data-toggle="collapse" data-target=".nav-collapse_"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
-											<div class="nav-collapse nav-collapse_ collapse">
-												<ul class="nav sf-menu clearfix">
-													<li><a href="index.html">Home<span class="over1"></span></a></li>
-													<li><a href="about.html">About Us<span class="over1"></span></a></li>
-													<li><a href="services.html">Services<span class="over1"></span></a></li>
-													<li class="active"><a href="contact.html">Contact Us<span class="over1"></span></a></li>
-												</ul>
-											</div>
-										</div>
-									</div>
-								</div>
-							</nav>
-							<!-- END NAVIGATION MENU -->
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 		<div class="pages_wrapper">
 			<div class="container">
 				<div class="row">
@@ -65,38 +29,58 @@
 					   <!-- START CONTACT US -->
 						<div class="pages">
 							<!-- START COMMENT -->
-							<h3>Leave A Comment</h3>
+							<h3>宝宝信息</h3>
 							<div id="note"></div>
 							<div id="fields">
 								<form id="ajax-contact-form" class="form-horizontal">
 									<div class="block1 clearfix">
 										<div class="block3">
 											<div class="control-group">
-												<label class="control-label" for="inputName">Full Name</label>
+												<label class="control-label" for="inputName">姓名</label>
 												<div class="controls">
-													<input type="text" id="inputName" name="name" value="Full Name" onBlur="if(this.value=='') this.value='Full Name'" onFocus="if(this.value =='Full Name' ) this.value=''"> </div>
+													<input type="text" id="inputName" name="name" onBlur="if(this.value=='') this.value='姓名'" onFocus="if(this.value =='姓名' ) this.value=''">
+												</div>
 											</div>
 											<div class="control-group">
-												<label class="control-label" for="inputEmail">E-mail</label>
+												<label class="control-label" for="inputName">小名</label>
 												<div class="controls">
-													<input type="text" id="inputEmail" name="email" value="E-mail" onBlur="if(this.value=='') this.value='E-mail'" onFocus="if(this.value =='E-mail' ) this.value=''"> </div>
+													<input type="text" id="inputNickName" name="nickNname" onBlur="if(this.value=='') this.value='小名'" onFocus="if(this.value =='小名' ) this.value=''">
+												</div>
 											</div>
 											<div class="control-group">
-												<label class="control-label" for="inputPhone">Phone</label>
-												<div class="controls">
-													<input type="text" id="inputPhone" name="phone" value="Phone" onBlur="if(this.value=='') this.value='Phone'" onFocus="if(this.value =='Phone' ) this.value=''"> </div>
+												<label class="control-label-gg"><input type="radio" class="control-label-radio" name="sex" value="sex" checked/>男宝宝</label>
+												<label class="control-label-gg"><input type="radio" class="control-label-radio" name="sex" value="sex"/>女宝宝</label>
 											</div>
-										</div>
-										<div class="block4">
 											<div class="control-group">
-												<label class="control-label" for="inputMessage">Message</label>
+												<label class="control-label" for="inputBirthday">生日</label>
 												<div class="controls">
-													<textarea id="inputMessage" name="content" onBlur="if(this.value=='') this.value='Message'" onFocus="if(this.value =='Message' ) this.value=''">Message</textarea>
+													<input readonly type="text" id="inputBirthday" name="birthday" placeholder="YYYY-MM-DD">
+												</div>
+											</div>
+											<div class="control-group">
+												<label class="control-label" style="padding-right: 25px;" for="inputHour">时</label>
+												<div class="controls">
+													<input type="text" id="inputHour" name="hour" onBlur="if(this.value=='') this.value='hour'" onFocus="if(this.value =='hour' ) this.value=''">
+												</div>
+											</div>
+											<div class="control-group">
+												<label class="control-label" style="padding-right: 25px;" for="inputMinute">分</label>
+												<div class="controls">
+													<input type="text" id="inputMinute" name="minute" onBlur="if(this.value=='') this.value='minute'" onFocus="if(this.value =='minute' ) this.value=''">
+												</div>
+											</div>
+											<div class="control-group">
+												<label class="control-label" style="padding-right: 25px;" for="inputSecond">秒</label>
+												<div class="controls">
+													<input type="text" id="inputSecond" name="second" onBlur="if(this.value=='') this.value='second'" onFocus="if(this.value =='second' ) this.value=''">
 												</div>
 											</div>
 										</div>
+
 									</div>
-									<button type="submit" class="submit">Submit Comment</button>
+									<div class="subdiv">
+										 <button type="submit" class="submit">提交</button>
+									</div>
 								</form>
 							</div>
 							<!-- END COMMENT -->
@@ -119,11 +103,20 @@
 <script type="text/javascript" src="js/jquery.caroufredsel.js"></script>
 <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/rolldate.min.js"></script>
 <script src="http://ditu.google.cn/maps/api/js?key=AIzaSyCe2q1gFSd75jKUnTDPq0nZWaMlEu6vL30"></script>
 <script src="js/map.js"></script>
 <script>
-	// CAROUFSEDSEL SLIDER 
+	// CAROUFSEDSEL SLIDER
+
 	$(document).ready(function () {
+		new Rolldate({
+			el: '#inputBirthday',
+			format: 'YYYY-MM-DD',
+			beginYear: 2000,
+			endYear: 2100
+		});
+
 		$('#caroufredsel_slider1').carouFredSel({
 			auto: {
 				timeoutDuration: 9000
